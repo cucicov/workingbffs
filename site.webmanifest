@@ -1,12 +1,12 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "Platforma Prieteniei",
+  "name": "Working BFFs - Platforma Prieteniei",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/",
   "background_color": "#fafafa",
   "theme_color": "#fafafa"
 }

@@ -11,6 +11,13 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@font-face {
+  font-family: 'fatso';
+  src: url('/fonts/FATSOCAP.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   color: #222;
   font-size: 1em;
@@ -243,5 +250,85 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+
 }
+
+.overlay-bling{
+
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.speed-1 {
+  transform: translateZ(-1px) scale(2);
+}
+
+.speed-2 {
+  transform: translateZ(-2px) scale(3);
+}
+
+.speed-25 {
+  transform: translateZ(-2.5px) scale(3.7);
+}
+
+.speed-3 {
+  transform: translateZ(-3px) scale(4);
+}
+
+.speed-4 {
+  transform: translateZ(-4px) scale(5);
+}
+
+.speed-5 {
+  transform: translateZ(-5px) scale(6);
+}
+
+.speed-6 {
+  transform: translateZ(-6px) scale(7);
+}
+
+.object {
+  margin-left: 250px;
+  height: 100px;
+}
+
+.object-1 {
+  margin-top: 100px;
+  background: red;
+}
+
+.object-2 {
+  margin-top: 200px;
+  background: yellow;
+}
+
+.object-3 {
+  margin-top: 300px;
+  background: blue;
+}
+
+.object-4 {
+  margin-top: 400px;
+  background: green;
+}
+
+.object-5 {
+  margin-top: 500px;
+  background: pink;
+}
+
+.object-6 {
+  margin-top: 600px;
+  background: purple;
+}
+
+.page-content {
+  height: 6000px;
+}
+
 
