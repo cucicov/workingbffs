@@ -1,0 +1,447 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+}
+.parallax-container {
+  width: 100%;
+  height: 550vh;
+  position: relative;
+  overflow: hidden;
+}
+.stars-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("https://simplifyscript.com/wp-content/uploads/2024/08/galaxy.webp") repeat center top;
+  background-size: 30%;
+}
+.main-container {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    z-index: 10;
+ text-align: center;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+    padding: 0;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.headingtext h1 {
+    font-family: 'Berlin Sans FB', sans-serif;
+    position: relative;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 70px;
+    margin: 20px 0px 0px 0px;
+}
+.headingtext h3 {
+    color: #ffffff;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+.logo-icon {
+    width: 200px;
+}
+.parallax-metroids {
+  position: absolute;
+  right: -0%;
+top: -0%;
+z-index: 10;
+}
+.parallax-planet-sm {
+  width: 20%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  z-index: 10;
+}
+.parallax-planet-sm img {
+  width: 100%;
+}
+.parallax-big {
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+.parallax-big img {
+  width: 100%;
+
+}
+.parallax-austronout {
+  position: absolute;
+  z-index: 10;
+  left: 20%;
+  width: 38%;
+  z-index: 12;
+  top: 20%;
+}
+.parallax-austronout img {
+  width: 100%;
+}
+.content-transparent {
+  width: 100%;
+}
+.content-transparent h2 {
+  color: #ffffff;
+  font-size: 40px;
+  width: 90%;
+  text-align: center;
+  font-size: 4vw;
+  font-family: 'Berlin Sans FB', sans-serif;
+  margin: 0 auto;
+margin-top: 50px;
+  z-index: 12;
+  font-weight: 900;
+
+}
+
+.setup-data {
+  position: relative;
+ margin: 0 auto;
+ width: 70vw;
+ font-size: 18px;
+ background: #ffffff;
+ padding: 20px;
+ border-radius: 20px;
+ margin-top: 50px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+.fordesktop {
+  display: block;
+}
+.content-transparent h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 10px 0px;
+  text-align: left;
+}
+
+.content-transparent h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 10px 0px;
+  text-align: left;
+}
+.content-transparent ul {
+  padding: 0 15px;
+  margin: 10px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+}
+.setup-data p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+.last-galaxy {
+  position: absolute;
+  width: 100%;
+  top: 68%;
+  z-index: 3;
+}
+.planet-blue {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+}
+.sm-metriods-con {
+  transform: rotate(-90deg);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+ z-index: 1;
+  top: 56%;
+  left: -180%;
+}
+.met-one {
+  position: absolute;
+    top: 0px;
+    width: 250px;
+  }
+.met-two {
+position: absolute;
+top: 15px;
+left: 150px;
+width: 130px;
+}
+.met-three {
+  position: absolute;
+  top: -20px;
+  width: 250px;
+  }
+  .met-three img, .met-two img {
+    width: 100%;
+  }
+  .planet-moon {
+    position: absolute;
+    top: 140%;    z-index: 5;
+
+    right: -20vw;
+    width: 85vw;
+  }
+  .planet-moon img {
+    width: 100%;
+  }
+  .bottom-bg {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    z-index: 10;
+
+  }
+  .bottom-bg img {
+    width: 100%;
+  }
+  .space-ship {
+    position: absolute;
+    top: 165%;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+    left: 15%;
+  }
+  .fire-sprite {
+    position: absolute;
+    left: 25%;
+    bottom: -47%;
+    height: 300px;
+  }
+  .download-button {
+    font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #000000 !important;
+  padding: 15px 25px;
+  background: #ffffff !important;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-decoration: none;
+
+  }
+  .main-bottom-container {
+    margin: -30px auto;
+    width: 100%;
+    position: relative;
+  background: #1a214d;
+  padding:20px 0px 0px 0px;
+  z-index: 8;
+  box-sizing: border-box;
+  }
+  .main-bg-con {
+    width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  .main-bg-con p{
+
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+
+  }
+  .whiteBg-logo {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .whiteBg-logo img {
+    width: 150px;
+  }
+  .mobile-content {
+    display: none;
+  }
+  /* Tablet Styles */
+@media (max-width: 1024px) {
+  .main-container {
+    width: 90%;
+    padding-top: 100px;
+  }
+
+  .headingtext h1 {
+    font-size: 50px;
+  }
+
+  .headingtext h3 {
+    font-size: 20px;
+  }
+
+  .logo-icon {
+    width: 150px;
+  }
+
+  .parallax-planet-sm {
+    width: 30%;
+    left: 5%;
+    top: 15%;
+  }
+  .parallax-metroids {
+    position: relative;
+    display: none;
+  }
+
+  .parallax-austronout {
+    width: 45%;
+    top: 25%;
+    left: 15%;
+  }
+
+  .content-transparent h2 {
+    font-size: 5vw;
+  }
+
+  .setup-data {
+    width: 90%;
+  }
+
+  .planet-moon {
+    top: 120%;
+    right: -15vw;
+    width: 90vw;
+  }
+
+  .space-ship {
+    top: 150%;
+    left: 10%;
+  }
+
+  .fire-sprite {
+    bottom: -30%;
+    height: 250px;
+  }
+
+  .main-bg-con {
+    width: 90%;
+  }
+ .mobile-content {
+    display: none;
+  }
+  .parallax-container {
+    height: 300vh;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .mobile-content {
+    display: block;
+  }
+  .main-container {
+    width: 100%;
+    padding-top: 80px;
+  }
+  .last-galaxy {
+    position: relative;
+  }
+  .fordesktop {
+    display: none;
+  }
+.parallax-container  {
+  position: relative;
+  height: auto;
+}
+  .headingtext h1 {
+    font-size: 40px;
+  }
+  .parallax-big {
+    position: relative;
+  }
+  .headingtext h3 {
+    font-size: 18px;
+  }
+
+  .logo-icon {
+    width: 120px;
+  }
+  .mobile-content {
+    position: relative;
+    z-index: 10;
+    margin-top: -400px;
+  }
+  .space-ship {
+    position: relative;
+    top: 0;
+  }
+
+  .parallax-planet-sm {
+    width: 35%;
+    left: -32%;
+    top: 20%;
+    position: relative;
+  }
+
+  .parallax-austronout {
+    width: 60%;
+    top: 30%;
+    left: 10%;
+    position: relative;
+  }
+
+  .content-transparent h2 {
+    font-size: 6vw;
+  }
+
+  .setup-data {
+    width: 95%;
+    margin-top: 20px;
+  }
+
+  .planet-moon {
+    top: 100%;
+    right: -10vw;
+    width: 100vw;
+  }
+
+  .space-ship {
+    top: 135%;
+    left: 10%;
+
+  }
+
+  .fire-sprite {
+    bottom: -20%;
+    height: 200px;
+  }
+
+  .main-bg-con {
+    width: 95%;
+  }
+
+  .download-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

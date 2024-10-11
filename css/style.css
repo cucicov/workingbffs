@@ -278,6 +278,7 @@ textarea {
 
 .speed-3 {
   transform: translateZ(-3px) scale(4);
+  z-index:9999;
 }
 
 .speed-4 {
@@ -331,4 +332,9 @@ textarea {
   height: 6000px;
 }
 
+.ibm-plex-mono-bold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
 
