@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'fatso';
-  src: url('/fonts/FATSOCAP.ttf') format('truetype');
+  src: url('../fonts/FATSOCAP.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,8 +22,10 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  background-color: #FFA3B2;
 }
 
+/*
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -99,10 +101,10 @@ textarea {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
+/*.hidden,*/
+/*[hidden] {*/
+/*  display: none !important;*/
+/*}*/
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -264,6 +266,16 @@ textarea {
   overflow-y: auto;
 }
 
+.object-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: none;
+  justify-content: center;
+}
+
 .speed-1 {
   transform: translateZ(-1px) scale(2);
 }
@@ -278,7 +290,6 @@ textarea {
 
 .speed-3 {
   transform: translateZ(-3px) scale(4);
-  z-index:9999;
 }
 
 .speed-4 {
@@ -296,6 +307,7 @@ textarea {
 .object {
   margin-left: 250px;
   height: 100px;
+  width: 300px;
 }
 
 .object-1 {
@@ -336,5 +348,70 @@ textarea {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
   font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  will-change: transform; /* Helps on mobile for performance */
+}
+
+.rainbow-background {
+  background:
+    linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
+  animation: r 6s linear infinite;
+}
+@keyframes r {
+  to {background-position: 100%}
+}
+
+/* Create an animated gradient */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  /*font-size: 4rem;*/
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #32e0c4);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Makes the text transparent, showing the background */
+  animation: gradient-animation 3s ease infinite;
 }
 
