@@ -249,7 +249,7 @@
     <div class="flex flex-col">
 
       <!-- ***** VIDEO 3 ---->
-      <article class="relative group flex justify-center items-center m-8 w-80 md:w-96 h-80 md:h-96 mt-64">
+      <article class="relative group flex justify-center items-center m-8 w-80 md:w-96 h-80 md:h-96 ml-20 md:ml-8 mt-64">
         <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black">
           <header class="flex rounded-t-[0.85rem] bg-[#ffa3b2]">
             <h1 class="flex-auto p-2 pl-4 border-b-2 border-black ibm-plex-mono-bold text-[#f6f2ef]">Adrian și Barbara222</h1>
@@ -330,7 +330,7 @@
       <!-- -->
 
       <!-- ***** RESOURCE ---->
-      <article class="relative group flex justify-center items-center m-8 w-80 h-96 mt-18 ml-8 md:ml-24">
+      <article class="relative group flex justify-center items-center m-8 w-80 h-96 mt-18 ml-12 md:ml-24">
         <a href="#" class="relative flex flex-col rounded-b-full w-full h-full bg-[#f6f2ef] border-2 border-black shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
           <header class="flex bg-[#ffa3b2] border-b-2 border-black ">
             <h1 class="p-2 ml-4 flex-auto w-32 marquee">
@@ -371,11 +371,11 @@
       </article>
       <!-- -->
 
-      <div class="flex flex-row">
+      <div class="flex flex-row p-12 justify-between">
         <!-- ***** TIK TOK ---->
-        <article class="relative group flex justify-center items-center m-8 w-40 md:w-48 h-80 md:h-96 mt-18">
+        <article class="relative group flex justify-center items-center m-0 w-40 md:w-48 h-80 md:h-96 mt-12 openVideo">
           <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black">
-            <header class="flex rounded-t-[0.85rem] bg-[#76A4B3]">
+            <header class="flex rounded-t-[0.85rem] bg-[#107EBD]">
               <div class="flex-auto p-2 pl-4 border-b-2 border-black ibm-plex-mono-bold text-[#f6f2ef]">
                 <img src="img/eye.png" alt="speaker icon"/>
               </div>
@@ -395,56 +395,90 @@
               <div class="absolute h-full w-full px-4 md:px-4 py-4 md:py-4 overflow-hidden">
                 <!-- Hidden div that shows on hover -->
                 <div class="absolute flex items-center justify-center md:hidden group-hover:flex bg-no-repeat w-full h-full -ml-4 -mt-4">
-                  <div class="flex justify-center items-center w-20 h-20 bg-[#76A4B3] border-2 border-black rounded-full shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
+                  <div class="flex justify-center items-center w-20 h-20 bg-[#107EBD] border-2 border-black rounded-full shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
                     <img src="/img/start.png" class="ml-2">
                   </div>
                 </div>
                 <!-- -->
-                <img src="/img/content/interviews/sample.png" alt="Image" class="rounded-2xl w-full h-full object-cover">
+                <img src="/img/content/thumbnails/tiktok1.JPG" alt="Image" class="rounded-2xl w-full h-full object-cover">
               </div>
             </section>
-
           </a>
-          <!-- -->
-
         </article>
-
-        <!-- ***** TIK TOK ---->
-        <article class="relative group flex justify-center items-center m-8 w-40 md:w-48 h-80 md:h-96 mt-32">
-        <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black">
-          <header class="flex rounded-t-[0.85rem] bg-[#107EBD]">
-            <div class="flex-auto p-2 pl-4 border-b-2 border-black ibm-plex-mono-bold text-[#f6f2ef]">
-              <img src="img/eye.png" alt="speaker icon"/>
-            </div>
-            <div class="flex justify-center items-center border-b-2 border-black w-24">
-              <div class="w-4 h-4 border-b-2 border-[#f6f2ef] mr-2"></div>
-              <div class="w-4 h-4 border-2 border-[#f6f2ef] mr-2"></div>
-              <div class="relative w-4 h-4 flex justify-center items-center ">
-                <!-- First line of the "X" -->
-                <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
-                <!-- Second line of the "X" -->
-                <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
-              </div>
-            </div>
-          </header>
-          <!-- article content -->
-          <section class="flex relative w-full h-full justify-center items-center">
-            <div class="absolute h-full w-full px-4 md:px-4 py-4 md:py-4 overflow-hidden">
-              <!-- Hidden div that shows on hover -->
-              <div class="absolute flex items-center justify-center md:hidden group-hover:flex bg-no-repeat w-full h-full -ml-4 -mt-4">
-                <div class="flex justify-center items-center w-20 h-20 bg-[#107EBD] border-2 border-black rounded-full shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
-                  <img src="/img/start.png" class="ml-2">
+        <!-- Modal for TIK TOK -->
+        <div class="modal videoModal">
+          <div class="modal-content">
+            <div class="relative w-full h-12">
+              <button class="absolute bg-red-500 text-white px-4 py-2 mb-4 right-0 rounded closeModal">
+                <div class="relative w-4 h-4 flex justify-center items-center ">
+                  <!-- First line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
+                  <!-- Second line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
                 </div>
-              </div>
-              <!-- -->
-              <img src="/img/content/interviews/sample.png" alt="Image" class="rounded-2xl w-full h-full object-cover">
+              </button>
             </div>
-          </section>
-
-        </a>
+            <video controls class="w-full desktopVideo">
+              <source src="video/tiktok/tiktok1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
         <!-- -->
 
-      </article>
+        <!-- ***** TIK TOK ---->
+        <article class="relative group flex justify-center items-center m-0 w-40 md:w-48 h-80 md:h-96 mt-40 openVideo">
+          <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black">
+            <header class="flex rounded-t-[0.85rem] bg-[#107EBD]">
+              <div class="flex-auto p-2 pl-4 border-b-2 border-black ibm-plex-mono-bold text-[#f6f2ef]">
+                <img src="img/eye.png" alt="speaker icon"/>
+              </div>
+              <div class="flex justify-center items-center border-b-2 border-black w-24">
+                <div class="w-4 h-4 border-b-2 border-[#f6f2ef] mr-2"></div>
+                <div class="w-4 h-4 border-2 border-[#f6f2ef] mr-2"></div>
+                <div class="relative w-4 h-4 flex justify-center items-center ">
+                  <!-- First line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
+                  <!-- Second line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
+                </div>
+              </div>
+            </header>
+            <!-- article content -->
+            <section class="flex relative w-full h-full justify-center items-center">
+              <div class="absolute h-full w-full px-4 md:px-4 py-4 md:py-4 overflow-hidden">
+                <!-- Hidden div that shows on hover -->
+                <div class="absolute flex items-center justify-center md:hidden group-hover:flex bg-no-repeat w-full h-full -ml-4 -mt-4">
+                  <div class="flex justify-center items-center w-20 h-20 bg-[#107EBD] border-2 border-black rounded-full shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
+                    <img src="/img/start.png" class="ml-2">
+                  </div>
+                </div>
+                <!-- -->
+                <img src="/img/content/thumbnails/tiktok2.JPG" alt="Image" class="rounded-2xl w-full h-full object-cover">
+              </div>
+            </section>
+          </a>
+        </article>
+        <!-- Modal for TIK TOK -->
+        <div class="modal videoModal">
+          <div class="modal-content">
+            <div class="relative w-full h-12">
+              <button class="absolute bg-red-500 text-white px-4 py-2 mb-4 right-0 rounded closeModal">
+                <div class="relative w-4 h-4 flex justify-center items-center ">
+                  <!-- First line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
+                  <!-- Second line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
+                </div>
+              </button>
+            </div>
+            <video controls class="w-full desktopVideo">
+              <source src="video/tiktok/tiktok2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <!-- -->
       </div>
 
       <!-- ***** PHOTOS ---->
@@ -575,43 +609,12 @@
 
   </div>
 
+
+
 </body>
 
 <script src="js/app.js" defer></script>
 <script async data-id="101466092" src="https://static.getclicky.com/js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
-  const hoverDiv = document.getElementById('jurnal');
-
-  // Function to apply hover behavior only on desktop (larger than 768px)
-  function handleHoverBehavior() {
-    if (window.innerWidth >= 768) {
-      // Apply hover behavior for desktop
-      hoverDiv.addEventListener('mouseenter', addHoverClass);
-      hoverDiv.addEventListener('mouseleave', removeHoverClass);
-    } else {
-      // On mobile, always apply the class
-      hoverDiv.classList.add('rainbow-background');
-      // Remove hover event listeners for mobile
-      hoverDiv.removeEventListener('mouseenter', addHoverClass);
-      hoverDiv.removeEventListener('mouseleave', removeHoverClass);
-    }
-  }
-
-  // Functions to add and remove class
-  function addHoverClass() {
-    hoverDiv.classList.add('rainbow-background');
-  }
-
-  function removeHoverClass() {
-    hoverDiv.classList.remove('rainbow-background');
-  }
-
-  // Run on page load
-  handleHoverBehavior();
-
-  // Run on window resize to recheck device width
-  window.addEventListener('resize', handleHoverBehavior);
-</script>
 
 </html>
