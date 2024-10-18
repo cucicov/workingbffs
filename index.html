@@ -122,6 +122,61 @@
         <!-- -->
       </article>
       <!-- -->
+
+      <!-- ***** TIK TOK ---->
+      <article class="relative group flex justify-center items-center ml-12 w-40 md:w-48 h-80 md:h-96 mt-12">
+        <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black openVideo">
+          <header class="flex rounded-t-[0.85rem] bg-[#107EBD]">
+            <div class="flex-auto p-2 pl-4 border-b-2 border-black ibm-plex-mono-bold text-[#f6f2ef]">
+              <img src="img/eye.png" alt="speaker icon"/>
+            </div>
+            <div class="flex justify-center items-center border-b-2 border-black w-24">
+              <div class="w-4 h-4 border-b-2 border-[#f6f2ef] mr-2"></div>
+              <div class="w-4 h-4 border-2 border-[#f6f2ef] mr-2"></div>
+              <div class="relative w-4 h-4 flex justify-center items-center ">
+                <!-- First line of the "X" -->
+                <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
+                <!-- Second line of the "X" -->
+                <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
+              </div>
+            </div>
+          </header>
+          <!-- article content -->
+          <section class="flex relative w-full h-full justify-center items-center">
+            <div class="absolute h-full w-full px-4 md:px-4 py-4 md:py-4 overflow-hidden">
+              <!-- Hidden div that shows on hover -->
+              <div class="absolute flex items-center justify-center md:hidden group-hover:flex bg-no-repeat w-full h-full -ml-4 -mt-4">
+                <div class="flex justify-center items-center w-20 h-20 bg-[#107EBD] border-2 border-black rounded-full shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
+                  <img src="/img/start.png" class="ml-2">
+                </div>
+              </div>
+              <!-- -->
+              <img src="/img/content/thumbnails/tiktok1.JPG" alt="Image" class="rounded-2xl w-full h-full object-cover">
+            </div>
+          </section>
+        </a>
+        <!-- Modal for TIK TOK -->
+        <div class="modal videoModal md:w-[40%]">
+          <div class="modal-content">
+            <div class="relative w-full h-12">
+              <button class="absolute bg-[#FFA3B2] text-white px-4 py-2 mb-4 right-0 rounded closeModal">
+                <div class="relative w-4 h-4 flex justify-center items-center ">
+                  <!-- First line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
+                  <!-- Second line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
+                </div>
+              </button>
+            </div>
+            <video controls class="w-full desktopVideo">
+              <source src="video/tiktok/tiktok1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </article>
+      <!-- -->
+
       <!-- ***** VIDEO 1 ---->
       <article class="relative group flex justify-center items-center m-8 w-80 md:w-96 h-80 md:h-96 mt-32">
         <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black">
@@ -215,6 +270,127 @@
         <!-- -->
       </article>
       <!-- -->
+
+      <!-- ***** PHOTOS ---->
+      <article class="relative group flex justify-center items-center m-8 w-80 md:w-96 h-80 md:h-96 mt-28 mx-auto md:ml-24">
+        <a href="#" class="photo-gallery cursor relative flex flex-col rounded-full w-full h-full bg-[#F4DA01] border-2 border-black shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
+          <!-- article content -->
+          <section class="flex relative w-full h-full justify-center items-center">
+            <div class="absolute h-full w-full px-4 py-4 overflow-hidden">
+              <!-- Hidden div that shows on hover -->
+              <div class="absolute flex items-center justify-center md:hidden group-hover:flex bg-no-repeat w-full h-full -ml-4 -mt-4">
+                <div class="flex justify-center items-center w-20 h-20 bg-[#F4DA01] border-2 border-black rounded-full shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
+                  <img src="img/photo.png" />
+                </div>
+              </div>
+              <!-- -->
+              <div class="rounded-full w-full h-full bg-white w-96 h-auto border-2 border-black">
+                <img src="img/content/photos/adrian_barbara/thumb.png" alt="Image" class="p-8 rounded-full w-full h-full object-cover"/>
+              </div>
+            </div>
+          </section>
+        </a>
+        <!-- -->
+
+        <!-- HIDDEN modal photos -->
+        <div class="modal-photo md:w-2/5">
+          <div class="modal-photo-content w-80 md:w-full h-auto mx-auto">
+            <div class="relative w-full h-12">
+              <button class="absolute bg-[#FFA3B2] text-white px-4 py-2 -mt-2 right-0 rounded close">
+                <div class="relative w-4 h-4 flex justify-center items-center ">
+                  <!-- First line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
+                  <!-- Second line of the "X" -->
+                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
+                </div>
+              </button>
+            </div>
+
+            <div class="mySlides h-auto">
+              <div class="numbertext">1 / 15</div>
+              <img src="img/content/photos/adrian_barbara/3.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 15</div>
+              <img src="img/content/photos/adrian_barbara/2.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 15</div>
+              <img src="img/content/photos/adrian_barbara/1.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 15</div>
+              <img src="img/content/photos/adrian_barbara/4.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 15</div>
+              <img src="img/content/photos/adrian_barbara/5.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 15</div>
+              <img src="img/content/photos/adrian_barbara/6.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 15</div>
+              <img src="img/content/photos/adrian_barbara/7.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 15</div>
+              <img src="img/content/photos/adrian_barbara/8.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">9 / 15</div>
+              <img src="img/content/photos/adrian_barbara/9.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">10 / 15</div>
+              <img src="img/content/photos/adrian_barbara/10.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">11 / 15</div>
+              <img src="img/content/photos/adrian_barbara/11.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">12 / 15</div>
+              <img src="img/content/photos/adrian_barbara/12.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">13 / 15</div>
+              <img src="img/content/photos/adrian_barbara/13.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">14 / 15</div>
+              <img src="img/content/photos/adrian_barbara/14.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">15 / 15</div>
+              <img src="img/content/photos/adrian_barbara/15.jpeg" style="width:100%">
+            </div>
+
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+
+          </div>
+        </div>
+        <!-- -->
+
+      </article>
+      <!-- -->
+
       <!-- ***** LINK JURNAL ---->
       <article class="relative group flex justify-center items-center m-8 w-80 md:w-96 h-52 md:h-52 mt-40">
         <a href="https://jurnal.platformaprieteniei.ro" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black" target="_blank">
@@ -371,10 +547,11 @@
       </article>
       <!-- -->
 
-      <div class="flex flex-row p-12 justify-between">
+      <!-- tiktoks ---->
+      <div class="flex flex-row p-12 md:p-4 justify-between">
         <!-- ***** TIK TOK ---->
-        <article class="relative group flex justify-center items-center m-0 w-40 md:w-48 h-80 md:h-96 mt-12 openVideo">
-          <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black">
+        <article class="relative group flex justify-center items-center m-0 w-40 md:w-48 h-80 md:h-96 mt-12 ">
+          <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black openVideo">
             <header class="flex rounded-t-[0.85rem] bg-[#107EBD]">
               <div class="flex-auto p-2 pl-4 border-b-2 border-black ibm-plex-mono-bold text-[#f6f2ef]">
                 <img src="img/eye.png" alt="speaker icon"/>
@@ -404,31 +581,32 @@
               </div>
             </section>
           </a>
-        </article>
-        <!-- Modal for TIK TOK -->
-        <div class="modal videoModal">
-          <div class="modal-content">
-            <div class="relative w-full h-12">
-              <button class="absolute bg-red-500 text-white px-4 py-2 mb-4 right-0 rounded closeModal">
-                <div class="relative w-4 h-4 flex justify-center items-center ">
-                  <!-- First line of the "X" -->
-                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
-                  <!-- Second line of the "X" -->
-                  <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
-                </div>
-              </button>
+          <!-- Modal for TIK TOK -->
+          <div class="modal videoModal md:w-[40%]">
+            <div class="modal-content">
+              <div class="relative w-full h-12">
+                <button class="absolute bg-[#FFA3B2] text-white px-4 py-2 mb-4 right-0 rounded closeModal">
+                  <div class="relative w-4 h-4 flex justify-center items-center ">
+                    <!-- First line of the "X" -->
+                    <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
+                    <!-- Second line of the "X" -->
+                    <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
+                  </div>
+                </button>
+              </div>
+              <video controls class="w-full desktopVideo">
+                <source src="video/tiktok/tiktok1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
-            <video controls class="w-full desktopVideo">
-              <source src="video/tiktok/tiktok1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
           </div>
-        </div>
-        <!-- -->
+          <!-- -->
+        </article>
+
 
         <!-- ***** TIK TOK ---->
-        <article class="relative group flex justify-center items-center m-0 w-40 md:w-48 h-80 md:h-96 mt-40 openVideo">
-          <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black">
+        <article class="relative group flex justify-center items-center m-0 w-40 md:w-48 h-80 md:h-96 mt-40 ">
+          <a href="#" class="relative flex flex-col rounded-2xl w-full h-full bg-[#f6f2ef] border-2 border-black openVideo">
             <header class="flex rounded-t-[0.85rem] bg-[#107EBD]">
               <div class="flex-auto p-2 pl-4 border-b-2 border-black ibm-plex-mono-bold text-[#f6f2ef]">
                 <img src="img/eye.png" alt="speaker icon"/>
@@ -458,12 +636,56 @@
               </div>
             </section>
           </a>
+          <!-- Modal for TIK TOK -->
+          <div class="modal videoModal md:w-[40%]">
+            <div class="modal-content">
+              <div class="relative w-full h-12">
+                <button class="absolute bg-[#FFA3B2] text-white px-4 py-2 mb-4 right-0 rounded closeModal">
+                  <div class="relative w-4 h-4 flex justify-center items-center ">
+                    <!-- First line of the "X" -->
+                    <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
+                    <!-- Second line of the "X" -->
+                    <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform -rotate-45"></div>
+                  </div>
+                </button>
+              </div>
+              <video controls class="w-full desktopVideo">
+                <source src="video/tiktok/tiktok2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <!-- -->
         </article>
-        <!-- Modal for TIK TOK -->
-        <div class="modal videoModal">
-          <div class="modal-content">
+
+      </div>
+
+      <!-- ***** PHOTOS ---->
+      <article class="relative group flex justify-center items-center m-8 w-80 md:w-96 h-80 md:h-96 mt-28 mx-auto md:ml-24">
+        <a href="#" class="photo-gallery cursor relative flex flex-col rounded-full w-full h-full bg-[#F4DA01] border-2 border-black shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
+          <!-- article content -->
+          <section class="flex relative w-full h-full justify-center items-center">
+            <div class="absolute h-full w-full px-4 py-4 overflow-hidden">
+              <!-- Hidden div that shows on hover -->
+              <div class="absolute flex items-center justify-center md:hidden group-hover:flex bg-no-repeat w-full h-full -ml-4 -mt-4">
+                <div class="flex justify-center items-center w-20 h-20 bg-[#F4DA01] border-2 border-black rounded-full shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
+                  <img src="img/photo.png" />
+                </div>
+              </div>
+              <!-- -->
+              <div class="rounded-full w-full h-full bg-white w-96 h-auto border-2 border-black">
+                <img src="img/content/photos/adrian_barbara/thumb.png" alt="Image" class="p-8 rounded-full w-full h-full object-cover"/>
+              </div>
+            </div>
+          </section>
+        </a>
+        <!-- -->
+
+        <!-- HIDDEN modal photos -->
+        <div class="modal-photo md:w-2/5">
+          <div class="modal-photo-content w-80 md:w-full h-auto mx-auto">
             <div class="relative w-full h-12">
-              <button class="absolute bg-red-500 text-white px-4 py-2 mb-4 right-0 rounded closeModal">
+              <button class="absolute bg-[#FFA3B2] text-white px-4 py-2 -mt-2 right-0 rounded close">
                 <div class="relative w-4 h-4 flex justify-center items-center ">
                   <!-- First line of the "X" -->
                   <div class="absolute bg-[#F6F2EF] h-[0.18rem] w-full transform rotate-45"></div>
@@ -472,34 +694,87 @@
                 </div>
               </button>
             </div>
-            <video controls class="w-full desktopVideo">
-              <source src="video/tiktok/tiktok2.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+
+            <div class="mySlides h-auto">
+              <div class="numbertext">1 / 15</div>
+              <img src="img/content/photos/adrian_barbara/3.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 15</div>
+              <img src="img/content/photos/adrian_barbara/2.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 15</div>
+              <img src="img/content/photos/adrian_barbara/1.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 15</div>
+              <img src="img/content/photos/adrian_barbara/4.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 15</div>
+              <img src="img/content/photos/adrian_barbara/5.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 15</div>
+              <img src="img/content/photos/adrian_barbara/6.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 15</div>
+              <img src="img/content/photos/adrian_barbara/7.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 15</div>
+              <img src="img/content/photos/adrian_barbara/8.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">9 / 15</div>
+              <img src="img/content/photos/adrian_barbara/9.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">10 / 15</div>
+              <img src="img/content/photos/adrian_barbara/10.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">11 / 15</div>
+              <img src="img/content/photos/adrian_barbara/11.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">12 / 15</div>
+              <img src="img/content/photos/adrian_barbara/12.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">13 / 15</div>
+              <img src="img/content/photos/adrian_barbara/13.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">14 / 15</div>
+              <img src="img/content/photos/adrian_barbara/14.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">15 / 15</div>
+              <img src="img/content/photos/adrian_barbara/15.jpeg" style="width:100%">
+            </div>
+
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+
           </div>
         </div>
-        <!-- -->
-      </div>
-
-      <!-- ***** PHOTOS ---->
-      <article class="relative group flex justify-center items-center m-8 w-80 md:w-96 h-80 md:h-96 mt-28 ml-24">
-        <a href="#" class="relative flex flex-col rounded-full w-full h-full bg-[#F4DA01] border-2 border-black shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
-          <!-- article content -->
-          <section class="flex relative w-full h-full justify-center items-center">
-            <div class="absolute h-full w-full px-4 py-4 overflow-hidden">
-              <!-- Hidden div that shows on hover -->
-              <div class="absolute flex items-center justify-center md:hidden group-hover:flex bg-no-repeat w-full h-full -ml-4 -mt-4">
-                <div class="flex justify-center items-center w-20 h-20 bg-[#F4DA01] border-2 border-black rounded-full shadow-[-4px_4px_0px_rgba(0,0,0,1)]">
-                  <img src="/img/photo.png" />
-                </div>
-              </div>
-              <!-- -->
-              <div class="rounded-full w-full h-full bg-white w-96 h-auto border-2 border-black">
-                <img src="/img/content/interviews/sample.png" alt="Image" class="p-8 rounded-full w-full h-full object-cover"/>
-              </div>
-            </div>
-          </section>
-        </a>
         <!-- -->
 
       </article>
@@ -538,7 +813,63 @@
       </article>
       <!-- -->
 
+
+<!--      <div class="flex flex-row justify-between">-->
+<!--        <div class="">-->
+<!--          <div>-->
+<!--            <img src="img/content/photos/adrian_barbara/thumb.png">-->
+<!--          </div>-->
+
+<!--        </div>-->
+
+
+
+
+
+
+<!--        <div class="photo-gallery">-->
+<!--          <div class=>-->
+<!--            <img src="img/content/photos/adrian_barbara/2.jpeg" class="hover-shadow cursor">-->
+<!--          </div>-->
+
+<!--        </div>-->
+
+<!--        <div class="modal-photo">-->
+<!--          <div class="modal-photo-content w-80 md:w-96 mx-auto">-->
+<!--            <span class="close cursor">&times;</span>-->
+
+<!--            <div class="mySlides h-auto">-->
+<!--              <div class="numbertext">1 / 4</div>-->
+<!--              <img src="img/content/photos/adrian_barbara/7.jpeg" style="width:100%">-->
+<!--            </div>-->
+
+<!--            <div class="mySlides">-->
+<!--              <div class="numbertext">2 / 4</div>-->
+<!--              <img src="img/content/photos/adrian_barbara/8.jpeg" style="width:100%">-->
+<!--            </div>-->
+
+<!--            <div class="mySlides">-->
+<!--              <div class="numbertext">3 / 4</div>-->
+<!--              <img src="img/content/photos/adrian_barbara/9.jpeg" style="width:100%">-->
+<!--            </div>-->
+
+<!--            <div class="mySlides">-->
+<!--              <div class="numbertext">4 / 4</div>-->
+<!--              <img src="img/content/photos/adrian_barbara/10.jpeg" style="width:100%">-->
+<!--            </div>-->
+
+<!--            <a class="prev">&#10094;</a>-->
+<!--            <a class="next">&#10095;</a>-->
+
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
     </div>
+
+
   </main>
 
   <!-- FOOTER ------------------>

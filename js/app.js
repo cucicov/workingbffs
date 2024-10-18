@@ -84,16 +84,8 @@ openVideoButtons.forEach(function(element) {
   let closeModalButton;
   let desktopVideo;
   if(videoModal) {
-    console.log('one desktopVideo found');
     closeModalButton = videoModal.querySelector('.closeModal');
     desktopVideo = videoModal.querySelector('.desktopVideo');
-  }
-
-  if (closeModalButton) {
-    console.log('one closeModal found')
-  }
-  if (desktopVideo) {
-    console.log('one desktopVideo found')
   }
 
 // Get the source element inside the modal
@@ -148,18 +140,88 @@ openVideoButtons.forEach(function(element) {
 
   // Close modal on desktop
   closeModalButton.addEventListener('click', function () {
+    console.log('close modal');
     if (isMobile() && mobileVideoElement) {
       // Remove video from mobile if it's still in DOM
       document.body.removeChild(mobileVideoElement);
       mobileVideoElement = null; // Reset the variable after removal
     } else {
       // Close modal on desktop
+      console.log(videoModal.classList);
       videoModal.classList.remove('active');
+      console.log(videoModal.classList);
+      console.log(desktopVideo);
       desktopVideo.pause();
     }
   });
 });
 
+
+
+// ----- POPUP PHOTOS -------------------------
+
+let photoGalleries = document.querySelectorAll(".photo-gallery");
+
+photoGalleries.forEach(function(element) {
+  let modal = element.nextElementSibling;
+
+  while (modal && !modal.classList.contains('modal-photo')) {
+    modal = modal.nextElementSibling;
+  }
+
+  element.addEventListener('click', function() {
+    openModal(modal);
+    currentSlide(1, modal);
+  });
+
+  // close button
+  let closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', function() {
+    closeModal(modal);
+  });
+
+  // next button
+  let nextButton = modal.querySelector('.next');
+  nextButton.addEventListener('click', function() {
+    plusSlides(1, modal);
+  });
+
+  // prev button
+  let prevButton = modal.querySelector('.prev');
+  prevButton.addEventListener('click', function() {
+    plusSlides(-1, modal);
+  });
+});
+
+function openModal(element) {
+  element.style.display = "block";
+}
+
+function closeModal(element) {
+  element.style.display = "none";
+}
+
+// var slideIndex = 1;
+// showSlides(slideIndex);
+
+function plusSlides(n, element) {
+  showSlides(slideIndex += n, element);
+}
+
+function currentSlide(n, element) {
+  showSlides(slideIndex = n, element);
+}
+
+function showSlides(n, element) {
+  var i;
+  var slides = element.querySelectorAll(".mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
 
 
 

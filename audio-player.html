@@ -1,0 +1,36 @@
+<!-- audio-player.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe Audio Player</title>
+</head>
+<body>
+
+<audio id="audioPlayer" controls>
+  <source src="your-audio-file.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  const audioPlayer = document.getElementById('audioPlayer');
+
+  // Listen for messages from the parent page
+  window.addEventListener('message', function(event) {
+    const message = event.data;
+
+    if (message === 'play') {
+      audioPlayer.play();
+    } else if (message === 'pause') {
+      audioPlayer.pause();
+    } else if (message.action === 'setVolume') {
+      audioPlayer.volume = message.value;
+    } else if (message.action === 'setCurrentTime') {
+      audioPlayer.currentTime = message.value;
+    }
+  });
+</script>
+
+</body>
+</html>
